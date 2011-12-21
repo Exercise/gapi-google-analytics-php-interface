@@ -659,7 +659,7 @@ class gapiClientLogin extends gapiAuthMethod {
    */
   protected function fetchToken($email, $password) {
     $post_variables = array(
-      'accountType' => 'GOOGLE',
+      'accountType' => 'HOSTED_OR_GOOGLE',
       'Email' => $email,
       'Passwd' => $password,
       'source' => gapi::interface_name,
