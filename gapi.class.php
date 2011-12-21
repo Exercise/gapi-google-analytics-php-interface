@@ -595,14 +595,14 @@ abstract class gapiAuthMethod {
    *
    * @return String
    */
-  protected static abstract function getMethodName();
+  protected abstract function getMethodName();
 
   /**
    * Abstract method that returns the identifier of the token in the auth header
    *
    * @return String
    */
-  protected static abstract function getTokenName();
+  protected abstract function getTokenName();
 
   /**
    * gapi factory: return an instance of gapi seeded with the auth token method
@@ -683,7 +683,7 @@ class gapiClientLogin extends gapiAuthMethod {
    *
    * @return String
    */
-  protected static function getMethodName() {
+  protected function getMethodName() {
     return 'GoogleLogin';
   }
 
@@ -692,7 +692,7 @@ class gapiClientLogin extends gapiAuthMethod {
    *
    * @return String
    */
-  protected static function getTokenName() {
+  protected function getTokenName() {
     return 'auth';
   }
 
@@ -809,7 +809,7 @@ class gapiAuthSub extends gapiAuthMethod {
    *
    * @return String
    */
-  protected static function getMethodName() {
+  protected function getMethodName() {
     return 'AuthSub';
   }
 
@@ -818,7 +818,7 @@ class gapiAuthSub extends gapiAuthMethod {
    *
    * @return String
    */
-  protected static function getTokenName() {
+  protected function getTokenName() {
     return 'token';
   }
 
