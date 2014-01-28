@@ -4,7 +4,7 @@
  * 
  * http://code.google.com/p/gapi-google-analytics-php-interface/
  * 
- * @28 Jan 2014
+ * @28 Jan 2014, solved
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
